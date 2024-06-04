@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ],
+    "crons": [
+        {
+            "path": "/scrape",
+            "schedule": "0 8-22 * * *"
+        },
+        {
+            "path": "/facebook",
+            "schedule": "10 8-22 * * *"
+        }
+    ]
+}

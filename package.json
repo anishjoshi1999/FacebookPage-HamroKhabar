@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "HamroKhabar is a Node.js application designed to automate the process of scraping news articles from selected Nepali websites and seamlessly publishing them on a Facebook page. This README offers a comprehensive guide to the project, including setup instructions and usage details.",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
